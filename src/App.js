@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import Table from './Table';
 
 class App extends Component {
-  render() {
-    const characters = [
+  /*render() {
+    /* const characters = [
       { 
         'name': 'Charlie',
         'job': 'Janitor'
@@ -21,26 +21,35 @@ class App extends Component {
         'job': 'Bartender'
       }
     ];
-    /* const workPlaces = [
-      {
-        'name' : 'Pittu Bambuwa',
-        'suburb' : 'Colombo 02'
-      },
-      {
-        'name' : 'Eureka Towers',
-        'suburb' : 'South Bank'
-      },
-      {
-        'name' : 'Merchant Towers',
-        'suburb' : 'Kolpetty'
-      } 
-    ]; */
+
     return (
       <div className="app-container">
-        <Table characterData={characters} /* workPlaceData={workPlaces} */ /> {/* Props */}  
+        <Table characterData={characters} />    // **** Props 
       </div>
     )
-  }
+  }*/
+
+  state = {
+    characters: [
+      { 
+        'name': 'Charlie',
+        'job': 'Janitor'
+      },
+      {
+        'name': 'Mac',
+        'job': 'Bouncer'
+      },
+      {
+        'name': 'Dee',
+        'job': 'Aspring actress'
+      },
+      {
+        'name': 'Dennis',
+        'job': 'Bartender'
+      }
+    ]
+  };
+
 }
 
 export default App;
