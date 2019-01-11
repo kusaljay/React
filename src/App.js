@@ -1,27 +1,45 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Table from './Table';
 
 class App extends Component {
   render() {
+    const characters = [
+      { 
+        'name': 'Charlie',
+        'job': 'Janitor'
+      },
+      {
+        'name': 'Mac',
+        'job': 'Bouncer'
+      },
+      {
+        'name': 'Dee',
+        'job': 'Aspring actress'
+      },
+      {
+        'name': 'Dennis',
+        'job': 'Bartender'
+      }
+    ];
+    /* const workPlaces = [
+      {
+        'name' : 'Pittu Bambuwa',
+        'suburb' : 'Colombo 02'
+      },
+      {
+        'name' : 'Eureka Towers',
+        'suburb' : 'South Bank'
+      },
+      {
+        'name' : 'Merchant Towers',
+        'suburb' : 'Kolpetty'
+      } 
+    ]; */
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app-container">
+        <Table characterData={characters} /* workPlaceData={workPlaces} */ /> {/* Props */}  
       </div>
-    );
+    )
   }
 }
 
