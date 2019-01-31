@@ -28,6 +28,16 @@ const TableBody = props => {
     return <tbody>{rows}</tbody>;
 }
 
+const TableFooter = () => {
+  return (
+    <tfoot>
+      <tr>
+          <td colSpan="3">Footer</td>
+      </tr>
+    </tfoot>
+  );
+}
+
 // Class component
 class Table extends Component {
   render() {
@@ -38,6 +48,7 @@ class Table extends Component {
       <table>
         <TableHeader />
         <TableBody characterData={characterData} removeCharacter={removeCharacter} />
+        <TableFooter />
       </table>
     );
   }
