@@ -1,8 +1,7 @@
 import React from 'react';
 import Movie from './Movie';
 
-//require('dotenv').config();
-console.log(process.env.REACT_APP_API_URL)
+console.log(process.env.REACT_APP_AHPRA_API_KEY);
 
 class App extends React.Component {
   state = {
